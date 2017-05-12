@@ -1,0 +1,96 @@
+/*
+  ========================================
+  body
+  quicksand, Calibri -> paragraphs
+  Nunito,Arial -> lighter paragraphs
+  cabin -> Headers
+
+  font-family: 'Quicksand', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Nunito', sans-serif;
+
+Cabin:400i|Nunito:300i|Quicksand:300,400
+  ========================================
+*/
+
+body{
+    background-color: #F2F5DE;
+    color: #50514F;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Nav-top
+  ========================================
+*/
+
+.navbar-fixed-top{
+    background-color: #D6F49D;
+    background: rgba(242,245,222, 0.4);
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.navigation-float{
+    float: right;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+#home{
+    background-image: url(https://images.unsplash.com/photo-1487581063035-1e15e9161b5c?dpr=1.25&auto=format&fit=crop&w=1080&h=1518&q=80&cs=tinysrgb&crop=&bg=);
+    background-position: 10% 20%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 40px;
+    /*This makes the div the size of the view port
+    courtesy of http://stackoverflow.com/questions/1575141/make-div-100-height-of-browser-window
+    */
+    height:100vh;
+}
+#home h1{
+    padding-top: 150px;
+    width: 70%;
+    left: 0;
+    font-family: 'Cabin', Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: 1.6px;
+}
+.highlight{
+    color: #247BA0;
+}
+
+#home button{
+    background: rgba(0, 0, 0, 0);
+    margin-top: 10px;
+    padding: 10px 35px;
+    font-size: 20px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    border: 2px solid #50514F;
+    color: #50514F;
+}
+
+#home button:hover{
+    background: rgba(254, 254, 254, .8);
+}
+
+/*
+  ========================================
+  Profile
+  ========================================
+*/
+
+#profile{
+    padding: 100px 10px;
+    background: #86E7B8;
+}

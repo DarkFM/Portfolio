@@ -4,31 +4,45 @@
         <title>Clinton Bestmann Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
-
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin:400i|Nunito:300i|Quicksand:300,400" rel="stylesheet">
     </head>
 <body>
     
-<nav>
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <header>Clinton Bestmann</header>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>       
-        </ul>
+        <header class="navbar-header">
+            <!--Brand logo-->
+            <a href="#" class="navbar-brand">Clinton Bestmann</a>
+            <!--button to toggle droped items-->
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-items">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </header>
+        <!--Everything below is contained in the dropdown nav-->
+        <div class="navbar-collapse collapse navbar-right" id="dropdown-items">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>       
+            </ul>
+        </div>
     </div>
 </nav>
 
 <section id="home">
     <div class="container">
-        <h1>I am Clinton Bestmann<br>and I am an aspiaring <span class="highlight">Full Stack Developer</span></h1>
-        <button type="">Get to know me</button>
+        <h1>I am Clinton Bestmann<br>I am an aspairing<br> <span class="highlight">Full Stack Developer</span></h1>
+        <a href="#profile">
+            <button class="btn" action="#profile" >Get to know me</button>
+        </a>
     </div>
 </section>
 
@@ -265,7 +279,7 @@
 
 <footer>
     <p> Coded and designed by Clinton Bestmann</p>
-    <nav>
+    <nav class="navigation-float">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#profile">Profile</a></li>
@@ -286,7 +300,14 @@
 
     <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+
+  <script>
+  	$(".nav li").on("click", function(){
+//       take away active class on list first
+      $(".nav li").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script>    
 </body>
 </html>
 
