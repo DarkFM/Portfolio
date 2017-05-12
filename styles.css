@@ -14,10 +14,31 @@ Cabin:400i|Nunito:300i|Quicksand:300,400
 */
 
 body{
-    background-color: #F2F5DE;
+    background-color: #F6F8EA;
     color: #50514F;
     font-family: 'Quicksand', Arial, sans-serif;
 }
+
+h2{
+    font-family: 'Cabin', Helvetica, sans-serif;
+    font-size: 35px;
+    /*text-transform: uppercase;*/
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+p{
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    line-height: 20px;
+}
+
+.highlight{
+    color: #348BAA;
+    font-size: 1.1em;
+}
+
 
 /*
   ========================================
@@ -25,13 +46,38 @@ body{
   ========================================
 */
 
-.navbar-fixed-top{
-    background-color: #D6F49D;
-    background: rgba(242,245,222, 0.4);
+nav.navbar-fixed-top{
+    /*background-color: #D6F49D;*/
+    background: rgba(246,248,234, 0.1);
+    -webkit-box-shadow: -2px 13px 27px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 13px 27px -13px rgba(0,0,0,0.75);
+    box-shadow: -2px 13px 27px -13px rgba(0,0,0,0.75)
 }
 
-.navbar-default .navbar-nav>.active>a {
+
+#dropdown-items{
+    font-size: 17px;
+    background-color: rgba(246,248,234,1);
+}
+
+#dropdown-items>ul li:hover{
+    color: #348BAA;
+    background-color: #CBEFDD;
+}
+
+/*.navbar-default .navbar-nav>.active>a {
     background-color: rgba(0, 0, 0, .1);
+}*/
+
+body nav.navbar-fixed-top>.container{
+    background-color: rgba(255,255,255, 0.1);    
+}
+
+
+.custom-active{
+    /*background-color: rgba(0, 0, 0, .1);*/
+    background-color: rgba(203, 239, 221, 1);    
+        
 }
 
 .navigation-float{
@@ -65,9 +111,6 @@ body{
     line-height: 65px;
     letter-spacing: 1.6px;
 }
-.highlight{
-    color: #247BA0;
-}
 
 #home button{
     background: rgba(0, 0, 0, 0);
@@ -91,6 +134,91 @@ body{
 */
 
 #profile{
-    padding: 100px 10px;
-    background: #86E7B8;
+    background: #F6F8EA;
 }
+
+#profile header.profile-top{
+    padding: 180px 50px;
+    padding-top: 130px;
+}
+
+#profile header p{
+    display: inline-block;
+    text-align: center;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding: 5px 15%;
+}
+
+
+/***********round profile image*********/
+div#profile-2 {
+    background: #B2EFD1;
+    padding-bottom: 100px;
+}
+
+.profile-img-div{
+    text-align: center;
+}
+
+#profile-2 .profile-img{
+    position: relative;
+    top: -100px;
+
+}
+
+#profile-2 header img{
+    height: 200px;
+    border: 4px #fefefe solid;
+    border-radius: 50%
+}
+
+
+#profile-2 header img:hover{
+    /*animation: colorchange;*/
+    border: 4px #348BAA solid;
+    transition: border .5s;
+}
+
+section header.icons{
+    font-size: 40px;
+    text-align: center;
+    padding: 0 0;
+}
+
+section header.icons i{
+    border: 2px rgba(0, 0, 0, 0) solid;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+section.panel-section:hover header i {
+    border: 2px #348BAA solid;
+    color: #348BAA;
+    transition: border .5s
+
+}
+
+.panel-contents {
+     text-align: center;
+     padding-top: 20px;
+     line-height: 25px;
+ }
+
+.panel-contents>h3{
+    letter-spacing: .5px;
+    font-size: 23px;
+}
+
+.panel-contents p{
+    padding: 20px 0;
+    font: 14px 'Nunito', sans-serif;
+    line-height: 27px;
+}
+
+/*
+  ========================================
+  Profile
+  ========================================
+*/
