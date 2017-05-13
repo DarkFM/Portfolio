@@ -85,9 +85,6 @@ body nav.navbar-fixed-top>.container{
         
 }
 
-.navigation-float{
-    float: right;
-}
 
 /*
   ========================================
@@ -425,3 +422,59 @@ div>textarea.form-control:hover{
   Footer
   ========================================
 */
+
+/*.navigation-float{
+    float: right;
+}*/
+
+#footer{
+    background-color: #3B3B3A;
+    color: #CBEFDD;
+    padding: 25px 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+
+#footer p,
+#footer nav>ul li,
+.contact-icons
+{
+    display: inline-block;
+}
+
+.foot-items{
+    padding-top: 20px;
+}
+
+.center-items{
+    text-align: center;
+}
+
+#footer nav>ul li a{
+    margin-left: 7px;
+    text-decoration: none;
+    color: #CBEFDD;    
+}
+
+.contact-icons{
+    /*font-size: 15px;*/
+    text-align: center;
+    /*padding: 0 0;*/
+}
+.contact-icons a{
+    text-decoration: none;
+}
+
+.contact-icons i{
+    border: 2px rgba(0, 0, 0, 0) solid;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.contact-icons i:hover {
+    border: 2px #F2F5DE solid;
+    background-color: #F2F5DE;
+    color: #348BAA;
+    transition: all .5s;
+}
