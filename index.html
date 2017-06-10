@@ -15,9 +15,9 @@
     <link href="https://use.fontawesome.com/db52c940be.css" media="all" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#mynavbar">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="mynavbar">
         <div class="container">
             <header class="navbar-header">
                 <!--Brand logo-->
@@ -32,7 +32,7 @@
             <!--Everything below is contained in the dropdown nav-->
             <div id="dropdown-items" class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <li class="custom-active"><a href="#home">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#profile">Profile</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -44,9 +44,10 @@
 
     <section id="home">
         <div class="container">
-            <h1>I am Clinton Bestmann<br>I am an aspiring<br> <span class="highlight">Full Stack Developer</span></h1>
+            <h1>I am Clinton Bestmann
+              <br>I am <span id="typing">Passionate</span><span class="cursor" style="color: #f55;">_</span></h1>
             <a href="#profile">
-            <button class="btn" action="#profile" >Get to know me</button>
+            <button class="btn" action="#profile">Get to know me</button>
         </a>
         </div>
     </section>
@@ -70,7 +71,7 @@
                 <div class="row">
                     <div class="col-xs-12 profile-img-div">
                         <header class="col-xs-12 profile-img">
-                            <img src="http://i.imgur.com/aNPGM1S.jpg" alt="Photo of Clinton">
+                            <img src="http://i.imgur.com/aNPGM1S.jpg?1" alt="Photo of Clinton">
                         </header>
                     </div>
 
@@ -169,7 +170,7 @@
                         
                         <!--default view before overlay on hover or click-->
                         <div class="project-image">
-                            <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fopenrobotics.ca%2Fupload_content%2Fproject_images%2F50%2F0.png&f=1" class="img-responsive" alt="Blank canvas">
+                            <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fopenrobotics.ca%2Fupload_content%2Fproject_images%2F50%2F0.png&f=1" class="img-responsive center-block" alt="Blank canvas">
                         </div>
                     </div>
                 </div>
@@ -190,7 +191,7 @@
                         </a>
                         <!--default view before overlay on hover or click-->
                         <div class="project-image">
-                            <img src="http://comohacer.eu/wp-content/uploads/2014/07/arduino-logo-oficial1.jpg" class="img-responsive" alt="Blank canvas">
+                            <img src="http://comohacer.eu/wp-content/uploads/2014/07/arduino-logo-oficial1.jpg" class="img-responsive center-block" alt="Blank canvas">
                         </div>
                     </div>
                 </div>
@@ -212,7 +213,7 @@
                         </a>
                         <!--default view before overlay on hover or click-->
                         <div class="project-image">
-                            <img src="http://graphics8.nytimes.com/images/2013/12/06/world/Mandela/Mandela-superJumbo.jpg" class="img-responsive" alt="Blank canvas">
+                            <img src="https://graphics8.nytimes.com/images/2013/12/06/world/Mandela/Mandela-superJumbo.jpg" class="img-responsive center-block" alt="Blank canvas">
                         </div>
                     </div>
                 </div>
@@ -222,7 +223,7 @@
                    <!--overlay div on image-->
                     <div class="overlay-div">
                         <!--show header at top and fotter at bottom-->
-                        <a href="http://codepen.io/DarkFM/full/xgdbbg/">
+                        <a href="https://codepen.io/DarkFM/full/xgdbbg/">
                             <div class="overlay-elements">
                                 <div class="overlay-header">Project title</div>
                                 <p>Color Game</p>
@@ -235,7 +236,7 @@
                         </a>
                         <!--default view before overlay on hover or click-->
                         <div class="project-image">
-                            <img src="http://i.imgur.com/ICGy83e.jpg?2" class="img-responsive" alt="Blank canvas">
+                            <img src="https://i.imgur.com/ICGy83e.jpg?2" class="img-responsive center-block" alt="Blank canvas">
                         </div>
                     </div>
                 </div>
@@ -258,7 +259,7 @@
                         </a>
                         <!--default view before overlay on hover or click-->
                         <div class="project-image">
-                            <img src="http://www.southbaymedspa.com/wp-content/uploads/2015/02/Image-Coming-Soon-Placeholder-400x280.png" class="img-responsive" alt="Blank canvas">
+                            <img src="http://www.southbaymedspa.com/wp-content/uploads/2015/02/Image-Coming-Soon-Placeholder-400x280.png" class="img-responsive center-block" alt="Blank canvas">
                         </div>
                     </div>
                 </div>
@@ -281,7 +282,7 @@
                         </a>
                         <!--default view before overlay on hover or click-->
                         <div class="project-image">
-                            <img src="http://www.southbaymedspa.com/wp-content/uploads/2015/02/Image-Coming-Soon-Placeholder-400x280.png" class="img-responsive" alt="Blank canvas">
+                            <img src="http://www.southbaymedspa.com/wp-content/uploads/2015/02/Image-Coming-Soon-Placeholder-400x280.png" class="img-responsive center-block" alt="Blank canvas">
                         </div>
                     </div>
                 </div>
@@ -364,6 +365,9 @@
             $(".nav li").removeClass("custom-active");
             $(this).addClass("custom-active");
         });
+      
     </script>
+
+    <script src="app.js"></script>
 </body>
 </html>

@@ -40,6 +40,7 @@ p{
 }
 
 
+
 /*
   ========================================
   Nav-top
@@ -48,7 +49,7 @@ p{
 
 nav.navbar-fixed-top{
     /*background-color: #D6F49D;*/
-    /*background: rgba(246,248,234, 0.1);*/
+/*     background: rgba(246,248,234, 0.1); */
     -webkit-box-shadow: -2px 13px 27px -13px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 13px 27px -13px rgba(0,0,0,0.75);
     box-shadow: -2px 13px 27px -13px rgba(0,0,0,0.75)
@@ -79,11 +80,10 @@ body nav.navbar-fixed-top>.container{
 }
 
 
-.custom-active{
-    /*background-color: rgba(0, 0, 0, .1);*/
+/* .custom-active{
     background-color: rgba(203, 239, 221, 1);    
         
-}
+} */
 
 
 /*
@@ -103,7 +103,9 @@ body nav.navbar-fixed-top>.container{
     courtesy of http://stackoverflow.com/questions/1575141/make-div-100-height-of-browser-window
     */
     height:100vh;
-    /*padding-bottom: 100px;*/
+/*   height: 800px; */
+/*       padding-bottom: 200px; */
+
 }
 #home h1{
     padding-top: 10%;
